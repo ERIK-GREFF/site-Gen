@@ -18,7 +18,7 @@
   </head>
   <body>
       <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <a class="navbar-brand text-white" href="#">Rocket League</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,13 @@
               <a class="nav-link text-white" href="#">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Ultimos campeões</a>
+              <a class="nav-link text-white" href="#cards">Ultimos campeões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#video">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contato">Contato</a>
             </li>
             
           </ul>
@@ -49,7 +55,7 @@
             <img class="d-block w-100" src="https://cdn1.dotesports.com/wp-content/uploads/sites/3/2020/06/11194934/40044f19-8e22-499a-b702-aaf17ec27062.jpg" alt="Primeiro Slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://i.blogs.es/285282/rl/1366_2000.jpg" alt="Segundo Slide">
+            <img class="d-block w-100" src="https://i.ytimg.com/vi/ZRQh7V-6kv8/maxresdefault.jpg" alt="Segundo Slide">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="https://psxbrasil.com.br/wp-content/uploads/2020/04/RtzF14VhD9ohd.jpg" alt="Terceiro Slide">
@@ -68,7 +74,7 @@
 
         <!--Jumbotron-->
       <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container"id="cards">
           <h1 class="display-4">RLCS Season X: Championships</h1>
           <p class="lead">Os ultimos campeões regionais.</p>
         </div>
@@ -76,7 +82,7 @@
         <!--/Jumbotron-->
 
         <!--Cards-->
-        <div class="card-group container">
+        <div class="card-group container" >
           <div class="card">
             <img class="card-img-top" src="assets/img/NRG.png" alt="Imagem de capa do card">
             <div class="card-body">
@@ -106,16 +112,16 @@
 
           <!--Texto e video-->
         
-          <div class="row mt-5 mb-5 container">
-            <div class="col-md-6">
-                <h3>RLCS X NORTH AMERICA </h3>
-                <p>
+          <div class="row mt-5 mb-5" id="video" >
+            <div class="col-md-12 ">
+                <h3 class="container" >RLCS X NORTH AMERICA </h3>
+                <p class="container">
                     video feito por squishy, um dos players da NRG, time composto por Squishy, GarrettG e Jstn. Nele Squishy conta como a NRG levou o torneio regional do rocket league, e conquistarão o prémio de 400 mil dolares.
                      
                 </p>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 container">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/1L-58yQGjko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
@@ -135,7 +141,7 @@
             <div class="col-md-12">
 
               <form>
-                <div class="form-group">
+                <div class="form-group"id="contato">
                   <label for="exampleFormControlInput1">Insira seu endereço de e-mail</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
                 </div>
