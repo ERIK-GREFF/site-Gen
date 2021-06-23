@@ -7,6 +7,7 @@ let descricaoOk = false
 
 
 function validaEmail() {
+
     let txtEmail = document.querySelector("#txtEmail")
     if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
         txtEmail.innerHTML = "E-mail inválido"
@@ -23,16 +24,13 @@ function validaDescricao() {
     let txtDescricao = document.querySelector("#txtDescricao")
 
     if (descricao.value.length > 100) {
-        txtDescricao.innerHTML = "Descrição inválida, texto muito grande, digite um máximo de 100 caracteres"
+        txtDescricao.innerHTML = "Descrição invalida, escreva no máximo 100 caracteres"
         txtDescricao.style.color = "red"
-        descricaoOk = false
-    } else if (descricao.value.length < 5) {
-        txtDescricao.innerHTML = "Descrição inválida, digite no mínimo 5 caracteres"
-        txtDescricao.style.color = "red"
-        descricaoOk = false
+        descricaoOk = false 
+
     } else {
         txtDescricao.innerHTML = "Descrição válida"
-        txtDescricao.style.color = "black"
+        txtDescricao.style.color = "green"
         descricaoOk = true
     }
 }
